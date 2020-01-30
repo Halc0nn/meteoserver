@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#2a7172">
+    <link href="static/style.css" rel="stylesheet" type="text/css">
+    <link href="static/logo.png" rel="shortcut icon" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Данные с датчика</title>
+</head>
+<body>
+    <header>
+        <table cellspacing="0px" border="0" width="100%">
+            <tr>
+                <td align="left" valign="middle" width="100%"><a href="/">OS</a></td>
+            </tr>
+        </table>
+    </header>
+    <div class="clear"><br></div>
+    <div id="wrapper">
+        <div id="center">
+            <div id="inscription">
+                <a href="/">Главная</a><p1> >> </p1><p1>Данные с датчика</p1>
+            </div><div class="clear"><br></div>
+            <div id="inscription">
+                <table cellspacing="10px" border="0" width="100%" align="center">
+                    <tr>
+                        <td align="center" valign="middle" width="100%"><h4>Данные с датчика</h4></td>
+                    </tr>
+                </table>
+            </div><div class="clear"><br></div>
+            <div id="news">
+                <table cellspacing="10px" border="0" width="100%" align="center">
+                    <tr>
+                        <td align="center" valign="middle" width="50%">Температура</td>
+                        <td align="center" valign="middle" width="50%">Влажность</td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle" width="50%">{{temperature|int}}</td>
+                        <td align="center" valign="middle" width="50%">{{humidity|int}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
