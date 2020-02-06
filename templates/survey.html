@@ -26,6 +26,20 @@
             <div id="inscription">
                 <table cellspacing="10px" border="0" width="100%" align="center">
                     <tr>
+                        <td align="center" valign="middle" width="100%"><h4>Параметры</h4></td>
+                    </tr>
+                </table>
+            </div><div class="clear"><br></div>
+            <div id="news">
+            <table cellspacing="10px" border="0" width="100%" align="center">
+                    <tr>
+                        <td align="center" valign="middle" width="100%"><a href="graph"><input type='button' value='График'></a></td>
+                    </tr>
+                </table>
+            </div><div class="clear"><br></div>
+            <div id="inscription">
+                <table cellspacing="10px" border="0" width="100%" align="center">
+                    <tr>
                         <td align="center" valign="middle" width="100%"><h4>Просмотр данных из БД</h4></td>
                     </tr>
                 </table>
@@ -33,31 +47,11 @@
             <div id="news">
                 <table cellspacing="10px" border="0" width="100%" align="center">
                     <tr>
-                        <td align="center" valign="top" width="40%">
-                            <table cellspacing="10px" border="0" width="100%" align="center">
-                                <tr>
-                                    <td align="center" valign="top" width="100%">Дата и время</td>
-                                </tr>
-                                {% for item_time in list_data_time %}<tr><td align="center" valign="middle" width="100%">{{ item_time }}</td></tr>{% endfor %}
-                            </table>    
-                        </td>
-                        <td align="center" valign="top" width="30%">
-                            <table cellspacing="10px" border="0" width="100%" align="center">
-                                <tr>
-                                    <td align="center" valign="top" width="100%">Температура</td>
-                                </tr>
-                                {% for item_temp in list_data_temp %}<tr><td align="center" valign="middle" width="100%">{{ item_temp }}</td></tr>{% endfor %}
-                            </table> 
-                        </td>
-                        <td align="center" valign="top" width="30%">
-                            <table cellspacing="10px" border="0" width="100%" align="center">
-                                <tr>
-                                    <td align="center" valign="top" width="100%">Влажность</td>
-                                </tr>
-                                {% for item_humi in list_data_humi %}<tr><td align="center" valign="middle" width="100%">{{ item_humi }}</td></tr>{% endfor %}
-                            </table> 
-                        </td>
+                        <td align="center" valign="top" width="60%">Дата</td>
+                        <td align="center" valign="top" width="20%">Температура</td>
+                        <td align="center" valign="top" width="20%">Влажность</td>
                     </tr>
+                    {% for item_data in list_data %}<tr><td align="center" valign="middle" width="60%">{{item_data[0]|string}}</td><td align="center" valign="middle" width="20%">{{item_data[1]|float}}</td><td align="center" valign="middle" width="20%">{{item_data[2]|int}}</td></tr>{% endfor %}
                 </table>
             </div>
         </div>
