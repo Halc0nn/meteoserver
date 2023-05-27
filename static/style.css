@@ -1,0 +1,123 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #f9fafb;
+    color: #333;
+    font-family: Segoe UI, "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    width: 98%;
+    float: left;
+    padding: 1%;
+    background-color: #07497d;
+}
+
+header a {
+    font-weight: 600;
+    color: white;
+    font-size: 2em;
+}
+
+header img {
+    width: 48px;
+}
+
+#wrapper {
+    width: 100%;
+    float: left;
+}
+
+#wrapper #center {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#wrapper #center #inscription {
+    width: 100%;
+    float: left;
+}
+
+#wrapper #center #inscription a {
+    font-weight: normal;
+    color: #07497d;
+    font-size: 1.4em;
+}
+
+#wrapper #center #inscription p1 {
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+#wrapper #center #inscription h4 {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #07497d;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#wrapper #center #news {
+    width: 98%;
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 10px;
+    float: left;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#wrapper #center #news h2 {
+    font-weight: normal;
+    color: #07497d;
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+
+#wrapper #center #news a {
+    color: #07497d;
+    text-decoration: underline;
+}
+
+#wrapper #center #news p {
+    font-size: 1em;
+}
+
+#wrapper #center #news input[type=button] {
+    width: 50%;
+    float: center;
+    border-radius: 30px;
+    border: 1.5px;
+    padding: 5px;
+    background-color: #07497d;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#wrapper #center #news input[type=button]:hover {
+    background-color: #1296de;
+}
+
+@media screen and (max-width:800px) {
+    #wrapper #center #news input[type=button] {
+        width: 80%;
+    }
+}
